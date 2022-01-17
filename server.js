@@ -28,10 +28,6 @@ app.get('/about', (req, res) => {
   res.show('about.html');
 });
 
-app.get('/user', (req, res) => {
-  res.show('about.html');
-});
-
 app.use((req, res) => {
   res.status(404).show('404.html');
 });
